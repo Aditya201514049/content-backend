@@ -17,6 +17,7 @@ const allowedOrigins = [
   'http://localhost:5176',
   'http://localhost:5177',
   'http://localhost:3000',
+  'https://content-frontend-tau.vercel.app',
   'https://contentguardian-1.onrender.com' // Add your frontend Render URL here
 ];
 
@@ -54,4 +55,4 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true })
   })
   .catch(err => {
     console.error('MongoDB connection error:', err);
-  });
+  }); 
